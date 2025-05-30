@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de fotos</title>
+<style>
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  background-color: #d5dde9
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 30px;
+    width: 100%;
+    position: fixed;
+}
+
+.logo{
+    font-size: 30px;
+    font: 'Georgia',serif;
+    color: white;
+}
+
+.corpo{
+    font-size: 30px;
+    font: 'Georgia',serif;
+    color: white;
+    text-align: center;
+}
+
+.text-section{
+    flex: 1;
+    padding: 20px 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-section .title{
+    font-size: 1000px;
+    line-height: 1.1;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.gallery {
+  border: 1px solid #ccc;
+}
+
+.gallery:hover {
+  border: 1px solid #777;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+.responsive{
+  padding: 0 6px;
+  float: left;
+  width: 10%;
+}
+
+.datas{
+    font-size: 30px;
+    font: 'Georgia',serif;
+    color: white;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .responsive {
+    width: 50%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.top-bar {
+  background-color: #5b8ce1;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-nome {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 60px;
+  margin-right: 15px;
+  align-items: center;
+}
+
+.highlight {
+  color: #37b537;
+}
+
+.menu-icon {
+  font-size: 2rem;
+  cursor: pointer;
+  display: block;
+}
+</style>
+  </head>
+
+<body style="background-color: #0b3d91;">
+  <header class="top-bar">
+    <div class="logo-nome">
+      <img src="logodatecnovida.png" alt="Logo TecnoVida" class="logo" />
+      <h1>TECNO<span class="highlight">VIDA</span></h1>
+    </div>
+  </header>
+  <main>
+    <article class="corpo">
+      <section class="text-section">
+        <h2>Eventos ocorridos</h2>
+      </section>
+    </article>
+
+      <!-- Galeria de Fotos -->
+
+    <div class="gallery-container">
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="Imagem 1.jfif">
+          <img src="Imagem 1.jfif" alt="Cinque Terre"></a>
+          <div class="desc">Palestra: Leis de Inclusão</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="Imagem 2.png">
+        <img src="Imagem 2.png" alt="Forest"></a>
+        <div class="desc">Aula de Tecnologia assistiva aplicada ao ambiente no trabalho</div>
+      </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="Imagem 4.jfif">
+          <img src="Imagem 4.jfif" alt="Northern Lights"></a>
+          <div class="desc">Seminário: Acessibilidade Digital </div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="Imagem 3.jfif">
+          <img src="Imagem 3.jfif" alt="Mountains"></a>
+          <div class="desc">Reunião na Sede TecnoVida</div>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <!-- Galeria de Eventos -->
+
+    <article class="datas">
+      <section class="text-section">
+      <h2>Proximos eventos</h2>
+      </section>
+    </article>
+
+    <div class="gallery-container">
+      <div class="responsive">
+        <div class="gallery">
+        <a target="_blank" href="7 Junho.png">
+        <img src="7 Junho.png" alt="1 data"></a>
+        <div class="desc">14:00 | Rua: Aberto Moura N° 98
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="21 Junho.png">
+        <img src="21 Junho.png" alt="2 data"></a>
+        <div class="desc">15:00 | Rua: José Duarte de Paiva N° 775</div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="5 Julho.png">
+        <img src="5 Julho.png" alt="3 data"></a>
+        <div class="desc">19:30 | Shopping Sete Lagoas</div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="19 Julho.png">
+        <img src="19 Julho.png" alt="4 data"></a>
+        <div class="desc">18:00 | Rua: Engenheiro Sergio Martins N° 148</div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="2 Agosto.png">
+        <img src="2 Agosto.png" alt="5 data"></a>
+        <div class="desc">09:00 | Rua: Alameida das Pedras N° 459</div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="23 Agosto.png">
+        <img src="23 Agosto.png" alt="6 data"></a>
+        <div class="desc">:00 | Rua: Engenheiro Sergio MArtins N° 148</div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="6 Setembro.png">
+        <img src="6 Setembro.png" alt="7 data"></a>
+        <div class="desc">17:00 | Rua: Avenida Gentúlio Vargas N° 159</div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="18 Outubro.png">
+        <img src="18 Outubro.png" alt="8 data"></a>
+        <div class="desc">15:00 | Rua: José Duarte de Paiva N° 775</div>
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+  </main>
+</body>
+</html>
+

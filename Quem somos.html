@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TECNOVIDA</title>
+  <link rel="stylesheet" href="sitedatecnovida.css" />
+</head>
+<style>
+    
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  font-size: 20px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #d5dde9;
+  color: #111;
+}
+
+.top-bar {
+  background-color: #0b3d91;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-nome {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 60px;
+  margin-right: 15px;
+  align-items: center;
+}
+
+.highlight {
+  color: #37b537;
+}
+
+.menu-icon {
+  font-size: 2rem;
+  cursor: pointer;
+  display: block;
+}
+
+/* Menu lateral */
+#menu-toggle {
+  display: none;
+}
+
+.side-menu {
+  position: fixed;
+  right: -250px;
+  top: 0;
+  height: 100%;
+  width: 250px;
+  background-color: #0b3d91;
+  color: white;
+  padding-top: 5rem;
+  transition: right 0.3s ease;
+  z-index: 999;
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.side-menu li {
+  padding: 1rem;
+  border-bottom: 1px solid #0b3d91;
+}
+
+.side-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Mostrar menu quando checkbox estiver marcado */
+#menu-toggle:checked ~ .side-menu {
+  right: 0;
+}
+
+/* Conteúdo */
+main {
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+
+footer{
+  color: #0b3d91;
+  text-align: center;
+            
+}
+  .Copyright {
+  font-size: 15px;
+}
+
+</style>
+<body>
+  <header class="top-bar">
+    <div class="logo-nome">
+      <img src="logodatecnovida.png" alt="Logo TecnoVida" class="logo" />
+      <h1>TECNO<span class="highlight">VIDA</span></h1>
+    </div>
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+  </header>
+  <nav class="side-menu">
+    <ul>
+      <li><a href="#quem-somos">Quem Somos</a></li>
+      <li><a href="#missao">Missão</a></li>
+      <li><a href="#visao">Visão</a></li>
+      <li><a href="#valores">Valores</a></li>
+    </ul>
+  </nav>
+
+  <!-- Conteúdo principal -->
+  <main>
+    <section id="quem-somos">
+      <h2>QUEM SOMOS</h2>
+      <p>A Tecnovida é uma organização não governamental com sede em Buenos Aires, Argentina, dedicada a promover a inclusão de pessoas com deficiência visual por meio da tecnologia. Fundada há sete anos.</p>
+
+      <p>A frente da Tecnovida está Helena Duarte, gestora e CEO da organização. Nascida em Buenos Aires, Helena tem se destacado pela sua liderança e pelo compromisso com causas sociais voltadas à acessibilidade. Sob sua gestão, a Tecnovida cresceu e consolidou-se como uma referência em soluções tecnológicas voltadas às necessidades dos deficientes visuais.</p>
+
+      <p>A ONG conta ainda com a parceria de Thiago, que atua como colaborador estratégico no processo de expansão da Tecnovida fora da Argentina. Um dos principais focos atuais é levar o projeto para o Brasil, mais especificamente para a cidade de Sete Lagoas (MG), onde estão sendo buscados novos parceiros e apoiadores para ampliar o impacto da iniciativa.</p>
+
+      <p>A Tecnovida acredita que a tecnologia pode transformar vidas e está empenhada em garantir que ela esteja ao alcance de todos.</p>
+    </section>
+
+    <section id="missao">
+      <h2>OBJETIVO/MISSÃO</h2>
+      <p>Acesso a tecnologia para pessoas que possuem deficiência visual.</p>
+    </section>
+
+    <section id="visao">
+      <h2>VISÃO</h2>
+      <p>ONG referência em inclusão e acesso a tecnologia.</p>
+    </section>
+
+    <section id="valores">
+      <h2>VALORES</h2>
+      <p>Ética, respeito, transparência, empatia, afetividade.</p>
+    </section>
+  </main>
+
+<footer>
+    <p class="Copyright">Copyright © 2025 TECNOVIDA - ESLOGAM - Desenvolvido voluntariamente por ANA LAURA POLIANA E HENRIQUE</p>
+</footer>
+  
+</body>
+</html>
+
+

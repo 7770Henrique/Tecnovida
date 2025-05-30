@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECNOVIDA</title>
+    <link rel="stylesheet" href="sitedatecnovidapag2.css">
+</head>
+<body>
+    <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+    width: 50%;
+    height: 100vh;
+    background-image: url('maosnobraile.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0%;
+}
+
+.top-bar {
+  background-color: green;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.highlight {
+    color: white;
+}
+
+form {
+    background-color: #fff;
+    max-width: 500px;
+    height: 450px;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+form h1 {
+    text-align: center;
+    font-size: 20px;
+    color: #2D5966;
+}
+
+form p {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.input-single {
+    position: relative;
+    margin-bottom: 20px 0;
+    margin: 30px;
+}
+
+.input-single label {
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    transition: all 0.2s;
+    cursor: text;
+}
+
+.input {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #ccc;
+    padding: 5px;
+    font-size: 17px;
+    outline: none;
+}
+
+form .input-single input:focus ~ label,
+form .input-single input:valid ~ label{
+    transform: translateY(-24px);
+    font-size: 12px;
+    color: #2D5966;
+    
+}
+
+.botão{
+    width: 100%;
+    text-align: center;
+}
+
+form input[type="submit"] {
+    padding: 10px 40px;
+    border: none;
+    background-color: green;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+    </style>
+    <header class="top-bar">
+        <div class="logo-nome">
+            <img src="logodatecnovida.png" alt="Logo TecnoVida" class="logo">
+            <h1>TECNO<span class="highlight">VIDA</span></h1>
+        </div>
+            <form action="">
+                <h1>ENTRE EM CONTATO</h1>
+                <p>AJUDE A NOSSA ONG A CONTINUAR NESSA MISSÃO</p>
+                <div class="input-single">
+                    <input type="text" name="" id="nome-box" class="input" autocomplete="off" required>
+                    <label for="nome-box">Seu nome completo</label>
+                </div>
+
+                <div class="input-single">
+                    <input type="text" name="" id="email" class="input" autocomplete="off" required>
+                    <label for="nome-box">Seu email</label>
+                </div>
+
+                <div class="input-single">
+                    <input type="text" name="" id="contato-box" class="input" autocomplete="off" required>
+                    <label for="assunto-box">Contato</label>
+                </div> 
+                
+                <div class="botão"><input type="submit" value="Enviar"></div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
